@@ -12,12 +12,7 @@ a {
     position: sticky;
     background-color: rgb(59, 59, 59);
     border: 1px solid rgb(19, 19, 19);
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-    height: auto;
+
     text-align:center;
 }
 .navbar-wrapper {
@@ -25,17 +20,28 @@ a {
     position: sticky;
     background-color: rgb(59, 59, 59);
     border: 1px solid rgb(19, 19, 19);
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
     height: auto;
     text-align:center;
 }
-.button {
-    position:fixed
-    width: 25%;
+.buttonl {
+    font: size 12px;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid rgb(19, 19, 19);
+    height: auto;
+    text-align:center;
+    float: left;
+    position: relative;
+    width: 10%;
+}
+.buttonr {
+    font: size 12px;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid rgb(19, 19, 19);
+    height: auto;
+    text-align:center;
+    float: right;
+    position: relative;
+    width: 10%;
 }
 @media only screen and (max-width: 768px) {
     .header-wrapper {
