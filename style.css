@@ -1,53 +1,143 @@
 body {
+    animation: transitionsin 1s;
+    -webkit-animation: transitionsin 1s;
+    opacity: 1;
+    transform: rotateX('0deg');
+    -webkit-transform: rotateX('0deg');
+    -moz-transform: rotateX('0deg');
+    -ms-transform: rotateX('0deg');
+    -o-transform: rotateX('0deg');
     background-color: rgb(19, 19, 19);
     color: rgb(216, 207, 207);
     padding: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 a {
     color: rgb(216, 207, 207);
 }
+
 .header-wrapper {
     font: size 16px;
     position: sticky;
     background-color: rgb(59, 59, 59);
     border: 1px solid rgb(19, 19, 19);
 
-    text-align:center;
+    text-align: center;
 }
+
 .navbar-wrapper {
     font: size 12px;
     position: sticky;
     background-color: rgb(59, 59, 59);
     border: 1px solid rgb(19, 19, 19);
     height: auto;
-    text-align:center;
+    text-align: center;
 }
+
 .buttonl {
     font: size 12px;
     background-color: rgb(59, 59, 59);
     border: 1px solid rgb(19, 19, 19);
     height: auto;
-    text-align:center;
+    text-align: center;
     float: left;
     position: relative;
     width: 10%;
 }
+
+.buttong {
+    font: size 12px;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid rgb(19, 19, 19);
+    height: auto;
+    text-align: center;
+    float: left;
+    position: relative;
+    width: 10%;
+}
+
+.buttong:active {
+    animation: transitionsout 1s;
+    -webkit-animation: transitionsout 1s;
+}
+
 .buttonr {
     font: size 12px;
     background-color: rgb(59, 59, 59);
     border: 1px solid rgb(19, 19, 19);
     height: auto;
-    text-align:center;
+    text-align: center;
     float: right;
     position: relative;
     width: 10%;
 }
+
 @media only screen and (max-width: 768px) {
     .header-wrapper {
         font-size: 1vw;
     }
+
     .navbar-wrapper {
         font-size: 1vw;
-    };
-  }
+    }
+
+    ;
+}
+
+/*
+Transitions
+*/
+@keyframes transitionsin {
+    from {
+        opacity: 0;
+        transform: rotateX('-10deg');
+        -webkit-transform: rotateX('-10deg');
+        -moz-transform: rotateX('-10deg');
+        -ms-transform: rotateX('-10deg');
+        -o-transform: rotateX('-10deg');
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX('0deg');
+        -webkit-transform: rotateX('0deg');
+        -moz-transform: rotateX('0deg');
+        -ms-transform: rotateX('0deg');
+        -o-transform: rotateX('0deg');
+        border: 1px solid rgb(19, 19, 19);
+        background-color: rgb(19, 19, 19);
+        color: rgb(216, 207, 207);
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+}
+@keyframes transitionsout {
+    from {
+        opacity: 1;
+        transform: rotateX('0deg');
+        -webkit-transform: rotateX('0deg');
+        -moz-transform: rotateX('0deg');
+        -ms-transform: rotateX('0deg');
+        -o-transform: rotateX('0deg');
+        border: 1px solid rgb(19, 19, 19);
+        background-color: rgb(19, 19, 19);
+        color: rgb(216, 207, 207);
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    to {
+        opacity: 0;
+        transform: rotateX('-10deg');
+        -webkit-transform: rotateX('-10deg');
+        -moz-transform: rotateX('-10deg');
+        -ms-transform: rotateX('-10deg');
+        -o-transform: rotateX('-10deg');
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+       
+    }
+}
